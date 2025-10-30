@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "services": "Sản Phẩm/Dịch vụ",
+    "clients": "Khách hàng",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "title": "TRUYỀN CẢM HỨNG Ý TƯỞNG",
+    "subtitle": "ĐỊNH HƯỚNG HÀNH TRÌNH CHUYỂN ĐỔI SỐ"
+  },
+  "story": {
+    "title": "CÂU CHUYỆN CỦA DELTA",
+    "description": "Thành lập vào 2020, Delta chính thức khởi động dự án và tiến phong trong lĩnh vực công nghệ thông tin. Với sự tin tưởng của khách hàng và đội ngũ chuyên gia, chúng tôi không ngừng phát triển và mang lại giải pháp tối ưu cho quý khách hàng."
+  },
+  "services": {
+    "title": "DỊCH VỤ",
+    "service1": {
+      "title": "Dịch vụ quảng cáo",
+      "description": "Mở rộng thị trường quảng cáo để tối ưu hóa chi phí và tăng hiệu quả tiếp cận khách hàng."
+    },
+    "service2": {
+      "title": "Sản xuất trò chơi",
+      "description": "Phát triển các trò chơi sáng tạo, chuyên nghiệp để mang lại trải nghiệm tuyệt vời cho người chơi."
+    },
+    "service3": {
+      "title": "Nội dung số",
+      "description": "Tạo nội dung số chất lượng cao, hấp dẫn để tăng cường sự tương tác với khách hàng."
+    }
+  },
+  "footer": {
+    "company": "Công ty",
+    "about": "Về chúng tôi",
+    "services": "Dịch vụ",
+    "contact": "Liên hệ",
+    "email": "admin@deltadigital.vn",
+    "copyright": "© Delta Digital 2025"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "clients": "Clients",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "INSPIRE IDEAS",
+    "subtitle": "GUIDE DIGITAL TRANSFORMATION JOURNEY"
+  },
+  "story": {
+    "title": "DELTA'S STORY",
+    "description": "Founded in 2020, Delta officially launched its project and pioneered in the field of information technology. With the trust of customers and expert teams, we continuously develop and deliver optimal solutions for our clients."
+  },
+  "services": {
+    "title": "SERVICES",
+    "service1": {
+      "title": "Advertising Services",
+      "description": "Expand advertising market to optimize costs and increase customer reach effectiveness."
+    },
+    "service2": {
+      "title": "Game Production",
+      "description": "Develop creative and professional games to deliver excellent gaming experiences."
+    },
+    "service3": {
+      "title": "Digital Content",
+      "description": "Create high-quality and engaging digital content to enhance customer interaction."
+    }
+  },
+  "footer": {
+    "company": "Company",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "email": "admin@deltadigital.vn",
+    "copyright": "© Delta Digital 2025"
+  }
+}
