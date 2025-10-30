@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "title": "Delta Digital",
+    "description": ""
+  },
   "nav": {
     "home": "Home",
     "about": "About",
@@ -8,11 +12,31 @@
   },
   "hero": {
     "title": "INSPIRE IDEAS",
-    "subtitle": "GUIDE DIGITAL TRANSFORMATION JOURNEY"
+    "subtitle": "GUIDE DIGITAL TRANSFORMATION JOURNEY",
+    "slide": {
+      "title_1": "",
+      "subtitle_1": "",
+      "title_2": "",
+      "subtitle_2": "",
+      "title_3": "",
+      "subtitle_3": "",
+      "title_4": "",
+      "subtitle_4": ""
+    }
   },
   "story": {
     "title": "DELTA'S STORY",
-    "description": "Founded in 2020, Delta officially launched its project and pioneered in the field of information technology. With the trust of customers and expert teams, we continuously develop and deliver optimal solutions for our clients."
+    "description_1": "Founded in 2020, Delta officially launched its project and pioneered in the field of information technology. ",
+    "description_2": "With the trust of customers and expert teams, we continuously develop and deliver optimal solutions for our clients."
+  },
+  "core": {
+    "title": "",
+    "content_1": "",
+    "content_1-1": "",
+    "content_2": "",
+    "content_2-1": "",
+    "content_3": "",
+    "content_3-1": ""
   },
   "services": {
     "title": "SERVICES",

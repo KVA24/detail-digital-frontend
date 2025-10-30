@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "title": "Delta Digital",
+    "description": ""
+  },
   "nav": {
     "home": "Trang chủ",
     "about": "Giới thiệu",
@@ -8,11 +12,35 @@
   },
   "hero": {
     "title": "TRUYỀN CẢM HỨNG Ý TƯỞNG",
-    "subtitle": "ĐỊNH HƯỚNG HÀNH TRÌNH CHUYỂN ĐỔI SỐ"
+    "subtitle": "ĐỊNH HƯỚNG HÀNH TRÌNH CHUYỂN ĐỔI SỐ",
+    "slide": {
+      "nasal_1": "",
+      "title_1": "TRUYỀN CẢM HỨNG Ý TƯỞNG",
+      "subtitle_1": "– ĐỊNH HƯỚNG HÀNH TRÌNH CHUYỂN ĐỔI SỐ",
+      "nasal_2": "Dịch vụ quảng cáo",
+      "title_2": "BIẾN NỀN TẢNG THÀNH",
+      "subtitle_2": "CỖ MÁY TẠO DOANH THU",
+      "nasal_3": "Sản xuất trò chơi ",
+      "title_3": "GẮN KẾT NGƯỜI DÙNG",
+      "subtitle_3": "QUA TỪNG CÚ CHẠM",
+      "nasal_4": "Nội dung số",
+      "title_4": "GẮN KẾT VỚI KHÁCH HÀNG",
+      "subtitle_4": "BẰNG CẢM XÚC"
+    }
   },
   "story": {
     "title": "CÂU CHUYỆN CỦA DELTA",
-    "description": "Thành lập vào 2020, Delta chính thức khởi động dự án và tiến phong trong lĩnh vực công nghệ thông tin. Với sự tin tưởng của khách hàng và đội ngũ chuyên gia, chúng tôi không ngừng phát triển và mang lại giải pháp tối ưu cho quý khách hàng."
+    "description_1": "Thành lập vào 2020, Delta chính thức khởi động dự án và tiến phong trong lĩnh vực công nghệ thông tin. ",
+    "description_2": "Với sự tin tưởng của khách hàng và đội ngũ chuyên gia, chúng tôi không ngừng phát triển và mang lại giải pháp tối ưu cho quý khách hàng."
+  },
+  "core": {
+    "title": "Năng lực cốt lõi",
+    "content_1": "Đội ngũ chuyên môn cao:",
+    "content_1-1": "> 150 nhân sự chuyên môn cao giúp rút ngắn thời gian triển khai, đảm bảo tính đồng bộ và tối ưu chi phí cho đối tác.",
+    "content_2": "Giải pháp toàn diện",
+    "content_2-1": "Kết hợp sáng tạo nội dung, công nghệ và truyền thông để mang đến giải pháp trọn vẹn — từ ý tưởng đến triển khai và đo lường hiệu quả cho từng đối tác.",
+    "content_3": "Đội ngũ chuyên môn cao:",
+    "content_3-1": "Tập hợp các dịch vụ từ truyền thông, sản xuất nội dung, game tương tác, quảng cáo digital đến vận hành dữ liệu và công nghệ, giúp triển khai linh hoạt và tối ưu cho mọi quy mô thương hiệu."
   },
   "services": {
     "title": "DỊCH VỤ",

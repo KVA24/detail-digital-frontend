@@ -5,6 +5,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Nasalization";
+  src: url("/fonts/nasalization.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -77,8 +85,12 @@
 }
 
 @theme inline {
-  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
   --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+  --font-nasal: "Nasalization", -apple-system, sans-serif;
+  
+  --background-image-story: url('/images/bg_story.png');
+  --background-image-core: url('/images/bg_core.png');
+  
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -116,91 +128,105 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   
-  /* Typography Headings */
-  --text-h1-extrabold: 600 64px/90px var(--font-sans);
-  --text-h1-bold: 500 64px/90px var(--font-sans);
-  --text-h1-medium: 400 64px/90px var(--font-sans);
-  --text-h1-regular: 300 64px/90px var(--font-sans);
+  /* ===============================
+    * NASALIZATION TYPOGRAPHY (Responsive)
+    * =============================== */
+  --text-h1-nasal: 600 clamp(40px, 5vw, 72px)/1.1 var(--font-nasal);
+  --text-h2-nasal: 600 clamp(32px, 4vw, 56px)/1.15 var(--font-nasal);
+  --text-h3-nasal: 600 clamp(26px, 3vw, 40px)/1.2 var(--font-nasal);
+  --text-h4-nasal: 600 clamp(20px, 2.4vw, 32px)/1.3 var(--font-nasal);
+  --text-body-nasal: 400 clamp(14px, 1.5vw, 18px)/1.5 var(--font-nasal);
   
-  --text-h2-extrabold: 600 48px/54px var(--font-sans);
-  --text-h2-bold: 500 48px/54px var(--font-sans);
-  --text-h2-medium: 400 48px/54px var(--font-sans);
-  --text-h2-regular: 300 48px/54px var(--font-sans);
+  /* ===============================
+     * HEADINGS
+     * =============================== */
+  --text-h1-extrabold: 600 clamp(40px, 5vw, 64px)/clamp(56px, 7vw, 90px) var(--font-sans);
+  --text-h1-bold: 500 clamp(40px, 5vw, 64px)/clamp(56px, 7vw, 90px) var(--font-sans);
+  --text-h1-medium: 400 clamp(40px, 5vw, 64px)/clamp(56px, 7vw, 90px) var(--font-sans);
+  --text-h1-regular: 300 clamp(40px, 5vw, 64px)/clamp(56px, 7vw, 90px) var(--font-sans);
   
-  --text-h3-extrabold: 600 40px/50px var(--font-sans);
-  --text-h3-bold: 500 40px/50px var(--font-sans);
-  --text-h3-medium: 400 40px/50px var(--font-sans);
-  --text-h3-regular: 300 40px/50px var(--font-sans);
+  --text-h2-extrabold: 600 clamp(32px, 4vw, 48px)/clamp(42px, 5vw, 54px) var(--font-sans);
+  --text-h2-bold: 500 clamp(32px, 4vw, 48px)/clamp(42px, 5vw, 54px) var(--font-sans);
+  --text-h2-medium: 400 clamp(32px, 4vw, 48px)/clamp(42px, 5vw, 54px) var(--font-sans);
+  --text-h2-regular: 300 clamp(32px, 4vw, 48px)/clamp(42px, 5vw, 54px) var(--font-sans);
   
-  --text-h4-extrabold: 600 36px/46px var(--font-sans);
-  --text-h4-bold: 500 36px/46px var(--font-sans);
-  --text-h4-medium: 400 36px/46px var(--font-sans);
-  --text-h4-regular: 300 36px/46px var(--font-sans);
+  --text-h3-extrabold: 600 clamp(28px, 3.6vw, 40px)/clamp(38px, 4.5vw, 50px) var(--font-sans);
+  --text-h3-bold: 500 clamp(28px, 3.6vw, 40px)/clamp(38px, 4.5vw, 50px) var(--font-sans);
+  --text-h3-medium: 400 clamp(28px, 3.6vw, 40px)/clamp(38px, 4.5vw, 50px) var(--font-sans);
+  --text-h3-regular: 300 clamp(28px, 3.6vw, 40px)/clamp(38px, 4.5vw, 50px) var(--font-sans);
   
-  --text-h5-extrabold: 600 30px/40px var(--font-sans);
-  --text-h5-bold: 500 30px/40px var(--font-sans);
-  --text-h5-medium: 400 30px/40px var(--font-sans);
-  --text-h5-regular: 300 30px/40px var(--font-sans);
+  --text-h4-extrabold: 600 clamp(24px, 3vw, 36px)/clamp(34px, 4vw, 46px) var(--font-sans);
+  --text-h4-bold: 500 clamp(24px, 3vw, 36px)/clamp(34px, 4vw, 46px) var(--font-sans);
+  --text-h4-medium: 400 clamp(24px, 3vw, 36px)/clamp(34px, 4vw, 46px) var(--font-sans);
+  --text-h4-regular: 300 clamp(24px, 3vw, 36px)/clamp(34px, 4vw, 46px) var(--font-sans);
   
-  --text-h6-extrabold: 600 20px/26px var(--font-sans);
-  --text-h6-bold: 500 20px/26px var(--font-sans);
-  --text-h6-medium: 400 20px/26px var(--font-sans);
-  --text-h6-regular: 300 20px/26px var(--font-sans);
+  --text-h5-extrabold: 600 clamp(20px, 2.4vw, 30px)/clamp(28px, 3.2vw, 40px) var(--font-sans);
+  --text-h5-bold: 500 clamp(20px, 2.4vw, 30px)/clamp(28px, 3.2vw, 40px) var(--font-sans);
+  --text-h5-medium: 400 clamp(20px, 2.4vw, 30px)/clamp(28px, 3.2vw, 40px) var(--font-sans);
+  --text-h5-regular: 300 clamp(20px, 2.4vw, 30px)/clamp(28px, 3.2vw, 40px) var(--font-sans);
   
-  --text-h7-extrabold: 600 12px/18px var(--font-sans);
-  --text-h7-bold: 500 12px/18px var(--font-sans);
-  --text-h7-medium: 400 12px/18px var(--font-sans);
-  --text-h7-regular: 300 12px/18px var(--font-sans);
+  --text-h6-extrabold: 600 clamp(16px, 1.8vw, 20px)/clamp(22px, 2.5vw, 26px) var(--font-sans);
+  --text-h6-bold: 500 clamp(16px, 1.8vw, 20px)/clamp(22px, 2.5vw, 26px) var(--font-sans);
+  --text-h6-medium: 400 clamp(16px, 1.8vw, 20px)/clamp(22px, 2.5vw, 26px) var(--font-sans);
+  --text-h6-regular: 300 clamp(16px, 1.8vw, 20px)/clamp(22px, 2.5vw, 26px) var(--font-sans);
   
-  /* Subtitle Text Styles */
-  --text-s1-extrabold: 600 28px/36px var(--font-sans);
-  --text-s1-semibold: 500 28px/36px var(--font-sans);
-  --text-s1-medium: 400 28px/36px var(--font-sans);
-  --text-s1-regular: 300 28px/36px var(--font-sans);
+  --text-h7-extrabold: 600 clamp(10px, 1vw, 12px)/clamp(14px, 1.2vw, 18px) var(--font-sans);
+  --text-h7-bold: 500 clamp(10px, 1vw, 12px)/clamp(14px, 1.2vw, 18px) var(--font-sans);
+  --text-h7-medium: 400 clamp(10px, 1vw, 12px)/clamp(14px, 1.2vw, 18px) var(--font-sans);
+  --text-h7-regular: 300 clamp(10px, 1vw, 12px)/clamp(14px, 1.2vw, 18px) var(--font-sans);
   
-  --text-s2-extrabold: 600 20px/24px var(--font-sans);
-  --text-s2-semibold: 500 20px/24px var(--font-sans);
-  --text-s2-medium: 400 20px/24px var(--font-sans);
-  --text-s2-regular: 300 20px/24px var(--font-sans);
+  /* ===============================
+   * SUBTITLE
+   * =============================== */
+  --text-s1-extrabold: 600 clamp(20px, 2.6vw, 28px)/clamp(28px, 3.2vw, 36px) var(--font-sans);
+  --text-s1-semibold: 500 clamp(20px, 2.6vw, 28px)/clamp(28px, 3.2vw, 36px) var(--font-sans);
+  --text-s1-medium: 400 clamp(20px, 2.6vw, 28px)/clamp(28px, 3.2vw, 36px) var(--font-sans);
+  --text-s1-regular: 300 clamp(20px, 2.6vw, 28px)/clamp(28px, 3.2vw, 36px) var(--font-sans);
   
-  --text-s3-extrabold: 600 32px/40px var(--font-sans);
-  --text-s3-semibold: 500 32px/40px var(--font-sans);
-  --text-s3-medium: 400 32px/40px var(--font-sans);
-  --text-s3-regular: 300 32px/40px var(--font-sans);
+  --text-s2-extrabold: 600 clamp(16px, 2vw, 20px)/clamp(20px, 2.6vw, 24px) var(--font-sans);
+  --text-s2-semibold: 500 clamp(16px, 2vw, 20px)/clamp(20px, 2.6vw, 24px) var(--font-sans);
+  --text-s2-medium: 400 clamp(16px, 2vw, 20px)/clamp(20px, 2.6vw, 24px) var(--font-sans);
+  --text-s2-regular: 300 clamp(16px, 2vw, 20px)/clamp(20px, 2.6vw, 24px) var(--font-sans);
   
-  /* Body Text Styles */
-  --text-body1-extrabold: 600 24px/32px var(--font-sans);
-  --text-body1-semibold: 500 24px/32px var(--font-sans);
-  --text-body1-medium: 400 24px/32px var(--font-sans);
+  --text-s3-extrabold: 600 clamp(20px, 3vw, 32px)/clamp(28px, 4vw, 40px) var(--font-sans);
+  --text-s3-semibold: 500 clamp(20px, 3vw, 32px)/clamp(28px, 4vw, 40px) var(--font-sans);
+  --text-s3-medium: 400 clamp(20px, 3vw, 32px)/clamp(28px, 4vw, 40px) var(--font-sans);
+  --text-s3-regular: 300 clamp(20px, 3vw, 32px)/clamp(28px, 4vw, 40px) var(--font-sans);
   
-  --text-body2-semibold: 600 20px/28px var(--font-sans);
-  --text-body2-medium: 500 20px/28px var(--font-sans);
-  --text-body2-regular: 400 20px/28px var(--font-sans);
+  /* ===============================
+   * BODY
+   * =============================== */
+  --text-body1-extrabold: 600 clamp(18px, 2.5vw, 24px)/clamp(26px, 3vw, 32px) var(--font-sans);
+  --text-body1-semibold: 500 clamp(18px, 2.5vw, 24px)/clamp(26px, 3vw, 32px) var(--font-sans);
+  --text-body1-medium: 400 clamp(18px, 2.5vw, 24px)/clamp(26px, 3vw, 32px) var(--font-sans);
   
-  --text-body3-semibold: 600 18px/26px var(--font-sans);
-  --text-body3-medium: 500 18px/26px var(--font-sans);
-  --text-body3-regular: 400 18px/26px var(--font-sans);
+  --text-body2-semibold: 600 clamp(16px, 2vw, 20px)/clamp(22px, 2.6vw, 28px) var(--font-sans);
+  --text-body2-medium: 500 clamp(16px, 2vw, 20px)/clamp(22px, 2.6vw, 28px) var(--font-sans);
+  --text-body2-regular: 400 clamp(16px, 2vw, 20px)/clamp(22px, 2.6vw, 28px) var(--font-sans);
   
-  --text-body4-semibold: 600 16px/24px var(--font-sans);
-  --text-body4-medium: 500 16px/24px var(--font-sans);
-  --text-body4-regular: 400 16px/24px var(--font-sans);
+  --text-body3-semibold: 600 clamp(14px, 1.8vw, 18px)/clamp(20px, 2.4vw, 26px) var(--font-sans);
+  --text-body3-medium: 500 clamp(14px, 1.8vw, 18px)/clamp(20px, 2.4vw, 26px) var(--font-sans);
+  --text-body3-regular: 400 clamp(14px, 1.8vw, 18px)/clamp(20px, 2.4vw, 26px) var(--font-sans);
   
-  --text-body5-semibold: 600 14px/22px var(--font-sans);
-  --text-body5-medium: 500 14px/22px var(--font-sans);
-  --text-body5-regular: 400 14px/22px var(--font-sans);
+  --text-body4-semibold: 600 clamp(12px, 1.5vw, 16px)/clamp(18px, 2vw, 24px) var(--font-sans);
+  --text-body4-medium: 500 clamp(12px, 1.5vw, 16px)/clamp(18px, 2vw, 24px) var(--font-sans);
+  --text-body4-regular: 400 clamp(12px, 1.5vw, 16px)/clamp(18px, 2vw, 24px) var(--font-sans);
   
-  --text-body6-semibold: 600 12px/20px var(--font-sans);
-  --text-body6-medium: 500 12px/20px var(--font-sans);
-  --text-body6-regular: 400 12px/20px var(--font-sans);
+  --text-body5-semibold: 600 clamp(10px, 1.2vw, 14px)/clamp(16px, 1.8vw, 22px) var(--font-sans);
+  --text-body5-medium: 500 clamp(10px, 1.2vw, 14px)/clamp(16px, 1.8vw, 22px) var(--font-sans);
+  --text-body5-regular: 400 clamp(10px, 1.2vw, 14px)/clamp(16px, 1.8vw, 22px) var(--font-sans);
   
-  --text-body7-semibold: 600 10px/18px var(--font-sans);
-  --text-body7-medium: 500 10px/18px var(--font-sans);
-  --text-body7-regular: 400 10px/18px var(--font-sans);
+  --text-body6-semibold: 600 clamp(9px, 1vw, 12px)/clamp(14px, 1.5vw, 20px) var(--font-sans);
+  --text-body6-medium: 500 clamp(9px, 1vw, 12px)/clamp(14px, 1.5vw, 20px) var(--font-sans);
+  --text-body6-regular: 400 clamp(9px, 1vw, 12px)/clamp(14px, 1.5vw, 20px) var(--font-sans);
   
-  --text-body8-semibold: 600 8px/16px var(--font-sans);
-  --text-body8-medium: 500 8px/16px var(--font-sans);
-  --text-body8-regular: 400 8px/16px var(--font-sans);
+  --text-body7-semibold: 600 clamp(8px, 0.8vw, 10px)/clamp(12px, 1.2vw, 18px) var(--font-sans);
+  --text-body7-medium: 500 clamp(8px, 0.8vw, 10px)/clamp(12px, 1.2vw, 18px) var(--font-sans);
+  --text-body7-regular: 400 clamp(8px, 0.8vw, 10px)/clamp(12px, 1.2vw, 18px) var(--font-sans);
   
+  --text-body8-semibold: 600 clamp(7px, 0.6vw, 8px)/clamp(10px, 1vw, 16px) var(--font-sans);
+  --text-body8-medium: 500 clamp(7px, 0.6vw, 8px)/clamp(10px, 1vw, 16px) var(--font-sans);
+  --text-body8-regular: 400 clamp(7px, 0.6vw, 8px)/clamp(10px, 1vw, 16px) var(--font-sans);
   
   /* Primary Colors */
   --color-primary-900: #1949a3;
@@ -290,6 +316,26 @@
 }
 
 @layer utilities {
+  .h1-nasal {
+    font: var(--text-h1-nasal);
+  }
+  
+  .h2-nasal {
+    font: var(--text-h2-nasal);
+  }
+  
+  .h3-nasal {
+    font: var(--text-h3-nasal);
+  }
+  
+  .h4-nasal {
+    font: var(--text-h4-nasal);
+  }
+  
+  .body1-nasal {
+    font: var(--text-body-nasal);
+  }
+  
   .h1-extrabold {
     font: var(--text-h1-extrabold);
   }
