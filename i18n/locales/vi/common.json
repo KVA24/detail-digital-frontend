@@ -44,17 +44,114 @@
   },
   "services": {
     "title": "DỊCH VỤ",
+    "subTitle": "Kiến tạo hệ sinh thái kết nối thương hiệu với người dùng bằng trải nghiệm",
     "service1": {
       "title": "Dịch vụ quảng cáo",
-      "description": "Mở rộng thị trường quảng cáo để tối ưu hóa chi phí và tăng hiệu quả tiếp cận khách hàng."
+      "description": "Mỗi điểm chạm quảng cáo là một trải nghiệm hài lòng cho khách hàng — và doanh số chính là thước đo của sự tăng trưởng."
     },
     "service2": {
       "title": "Sản xuất trò chơi",
-      "description": "Phát triển các trò chơi sáng tạo, chuyên nghiệp để mang lại trải nghiệm tuyệt vời cho người chơi."
+      "description": "Không chỉ là trò chơi, chúng tôi phát hành những game tương tác đa nền tảng, kết nối cảm xúc và cộng đồng."
     },
     "service3": {
       "title": "Nội dung số",
-      "description": "Tạo nội dung số chất lượng cao, hấp dẫn để tăng cường sự tương tác với khách hàng."
+      "description": "Chúng tôi không đơn thuần cung cấp nội dung – mà kiến tạo một hành trình giải trí đầy cảm xúc, nơi mỗi lượt xem, mỗi phút trải nghiệm đều nuôi dưỡng sự gắn bó."
+    }
+  },
+  "ad-service": {
+    "title-nasal": "Dịch vụ quảng cáo",
+    "title": "BIẾN NỀN TẢNG THÀNH",
+    "description": "“CỖ MÁY TẠO DOANH THU\"",
+    "subtitle": "Mỗi điểm chạm quảng cáo là một trải nghiệm hài lòng cho khách hàng — và doanh số chính là thước đo của sự tăng trưởng.",
+    "content": {
+      "title": "HIỆU NĂNG HỆ THỐNG",
+      "title_1": "Tiếp cận đối tượng",
+      "description_1": "Cá nhân hóa nội dung quảng cáo theo nhóm đối tượng mục tiêu.",
+      "title_2": "Hệ thống ổn định ",
+      "description_2": "Nền tảng quảng cáo ổn định, sẵn sàng mở rộng cho hàng triệu lượt truy cập đồng thời.",
+      "title_3": "Tối ưu hiệu quả",
+      "description_3": "Phân phối quảng cáo theo thời gian thực, tối ưu tốc độ tải và hiển thị.",
+      "title_4": "Tích hợp nội dung",
+      "description_4": "Tích hợp linh hoạt với nhiều định dạng nội dung: video, banner, mini game, native ads,... trên đa nền tảng",
+      "title_5": "Theo dõi & tinh chỉnh",
+      "description_5": "Báo cáo, đo lường real-time, đảm bảo minh bạch và kiểm soát hiệu quả."
+    },
+    "bento": {
+      "title": "Kết quả nổi bật",
+      "title_1": "Hiệu quả hiển thị ",
+      "description_1": "Hiệu quả hiển thị tăng 2,5 lần, tỷ lệ tiếp cận tự nhiên cao hơn 60%.",
+      "title_2": "Mức độ hài lòng",
+      "description_2": "Mức độ hài lòng đối tác đạt 90%, với tỷ lệ tái hợp tác trên 80%.",
+      "title_3": "Tỷ lệ tương tác",
+      "description_3": "Tỷ lệ tương tác tăng 45%, nhờ nội dung phù hợp và đúng thời điểm.",
+      "title_4": "Tăng doanh thu",
+      "description_4": "Doanh thu từ quảng cáo tăng trung bình 35% sau 3 tháng triển khai.",
+      "title_5": "Giảm chi phí quảng cáo",
+      "description_5": "Chi phí quảng cáo giảm 25–30% nhờ hệ thống tối ưu tự động."
+    }
+  },
+  "game-production": {
+    "title-nasal": "Sản xuất trò chơi",
+    "title": "GẮN KẾT NGƯỜI DÙNG",
+    "description": "QUA TỪNG CÚ CHẠM",
+    "subtitle": "Không chỉ là trò chơi, chúng tôi phát hành những game tương tác đa nền tảng, kết nối cảm xúc và cộng đồng.",
+    "content": {
+      "title": "Năng lực triển khai",
+      "title_1": "Trò chơi chất lượng cao",
+      "description_1": "Những tựa game được phát triển chuyên nghiệp, ổn định, thu hút hàng triệu người chơi mỗi ngày.",
+      "title_2": "Danh mục đa dạng",
+      "description_2": "Hơn 150+ trò chơi, từ dòng AAA đến hyper-casual.",
+      "title_3": "Trò chơi có thưởng",
+      "description_3": "Mô hình game tương tác kết hợp cơ chế thưởng theo hành vi người chơi.\n",
+      "title_4": "Tích hợp mượt mà",
+      "description_4": "Vận hành trên nền tảng phần thưởng uy tín, xử lý hàng triệu giao dịch mỗi ngày cho các thương hiệu hàng đầu.\n",
+      "title_5": "Năng lực cốt lõi vượt trội",
+      "description_5": "Đẩy nhanh tiến độ ra mắt nhờ năng lực sản xuất toàn diện và thành công đã được kiểm chứng.\n",
+      "title_6": "Hạ tầng sẵn sàng mở rộng",
+      "description_6": "Kiến trúc linh hoạt, dễ dàng mở rộng để đáp ứng tăng trưởng người dùng và nhu cầu triển khai mới."
+    },
+    "bento": {
+      "title": "Những con số biết nói",
+      "title_1": "Tăng tương tác",
+      "description_1": "Tăng x3 lần thời gian tương tác người dùng mỗi ngày",
+      "title_2": "Tiết kiệm chi phi",
+      "description_2": "Giảm 20 - 25% chi phí quảng cáo trên mỗi lượt tương tác",
+      "title_3": "Tăng doanh thu ",
+      "description_3": "Tăng trưởng doanh thu 17-20%",
+      "title_4": "Thu hút người dùng quay lại",
+      "description_4": " 60% người dùng sẵn sàng quay lại app",
+      "title_5": "Tỷ lệ chuyển đổi cao",
+      "description_5": "Tỷ lệ tiếp cận tự nhiên tăng 35–50% khi tích hợp yếu tố game tương tác hoặc phần thưởng mini event"
+    }
+  },
+  "digital-content": {
+    "title-nasal": "Nội dung số",
+    "title": "GẮN KẾT VỚI KHÁCH HÀNG",
+    "description": "BẰNG CẢM XÚC",
+    "subtitle": "Chúng tôi không đơn thuần cung cấp nội dung – mà kiến tạo một hành trình giải trí đầy cảm xúc, nơi mỗi lượt xem, mỗi phút trải nghiệm đều nuôi dưỡng sự gắn bó.",
+    "content": {
+      "title": "Điểm nổi bật",
+      "title_1": "Chiến lược định hướng thương hiệu",
+      "description_1": "Kết nối toàn chuỗi giá trị nội dung: từ sáng tạo, sản xuất, phân phối đến đo lường hiệu quả.",
+      "title_2": "Đo lường toàn diện",
+      "description_2": "Quản trị và tối ưu bằng dữ liệu, giúp nội dung đến đúng người – đúng thời điểm – đúng ngữ cảnh.",
+      "title_3": "Nội dung đa nền tảng",
+      "description_3": "Đa nền tảng hiển thị  với kho nội dung phong phú nhiều thể loại.",
+      "title_4": "Liên kết chặt chẽ",
+      "description_4": "Liên kết chặt chẽ với hệ thống quảng cáo và phân tích người dùng, tạo vòng khép kín “sáng tạo – phân phối – doanh thu",
+      "title_5": "Mô hình linh hoạt",
+      "description_5": "Sẵn sàng mở rộng và tùy biến theo nhu cầu từng thương hiệu hoặc đối tác truyền thông."
+    },
+    "bento": {
+      "title": "Với Nội dung số, doanh nghiệp có thể:",
+      "title_1": "Tăng tần suất truy cập ",
+      "description_1": "Tăng gấp 4 lần tần suất truy cập ứng dụng/website mỗi ngày",
+      "title_2": "Tạo thói quen",
+      "description_2": "Hình thành thói quen giải trí trên nền tảng, gia tăng giá trị vòng đời khách hàng (CLV)",
+      "title_3": "Tăng chuyển đổi",
+      "description_3": "Tăng 20–30% khả năng chuyển đổi người dùng sang dịch vụ trả phí",
+      "title_4": "Cá nhân hoá trải nghiệm",
+      "description_4": "Mang đến trải nghiệm cá nhân hóa theo từng nhóm đối tượng, đúng sở thích – đúng thời điểm"
     }
   },
   "footer": {

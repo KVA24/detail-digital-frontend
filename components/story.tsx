@@ -7,7 +7,7 @@ export default function Story() {
   const t = useTranslations("story")
 
   return (
-    <section id="about" className="py-20 bg-white bg-story">
+    <section id="about" className="py-5 lg:py-20 bg-white bg-story">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -5,6 +5,7 @@ import {getMessages, getTranslations} from "next-intl/server"
 import {NextIntlClientProvider} from "next-intl"
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import ScrollToTop from "@/components/scroolToTop";
 
 export async function generateMetadata(
   {params}: { params: Promise<{ locale: string }> }
@@ -67,6 +68,7 @@ export default async function LocaleLayout({children, params}: LocaleLayoutProps
       <Header/>
       {children}
       <Footer/>
+      <ScrollToTop/>
     </NextIntlClientProvider>
   );
 }

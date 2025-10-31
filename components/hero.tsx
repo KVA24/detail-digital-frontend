@@ -77,16 +77,16 @@ export default function Hero() {
             <div className="relative z-10 w-full h-full flex flex-col justify-center px-8 lg:px-20 max-w-5xl">
               {slides[index].nasal && (
                 <h1
-                  className="h1-nasal font-bold text-blue-100 mb-4 whitespace-nowrap">
+                  className="h1-nasal font-bold text-blue-100 mb-4 lg:whitespace-nowrap">
                   {slides[index].nasal}
                 </h1>
               )}
               <h1
-                className="h1-extrabold font-bold text-warning-500 mb-4 whitespace-nowrap">
+                className="h1-extrabold font-bold text-warning-500 mb-4 lg:whitespace-nowrap">
                 {slides[index].title}
               </h1>
               <p
-                className="h1-extrabold font-semibold text-white mb-8 whitespace-nowrap">
+                className="h1-extrabold font-semibold text-white mb-8 lg:whitespace-nowrap">
                 {slides[index].subtitle}
               </p>
             </div>

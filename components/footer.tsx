@@ -1,7 +1,7 @@
 "use client"
 
 import {useLocale, useTranslations} from "next-intl"
-import Link from "next/link"
+import {Link} from "@/i18n/routing";
 import Image from "next/image";
 
 export default function Footer() {
@@ -9,18 +9,18 @@ export default function Footer() {
   const locale = useLocale()
   
   return (
-    <footer className="bg-white py-16">
+    <footer id="footer" className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
           {/* Brand */}
-          <Link href={`/${locale}`} className="flex items-center gap-2 col-span-2">
+          <Link href="/" className="flex items-center gap-2 col-span-2">
             <Image width={160} height={60} src="/icons/logo.svg" alt="Logo"/>
           </Link>
           
-          <div className="flex gap-8 col-start-9 col-span-4">
+          <div className="flex flex-col lg:flex-row gap-8 lg:col-start-9 lg:col-span-4">
             {/* Company */}
             <div>
-              <h5 className="text-h5-medium mb-4">{t("info")}</h5>
+              <h5 className="h5-medium mb-4">{t("info")}</h5>
               <ul className="space-y-2 text-grey-400 text-sm">
                 <li>
                   <Link href="#about" className="hover:text-brand-blue-1 transition">
@@ -47,7 +47,7 @@ export default function Footer() {
             
             {/* Contact */}
             <div>
-              <h5 className="text-h5-medium mb-4">Liên hệ</h5>
+              <h5 className="h5-medium mb-4">Liên hệ</h5>
               <ul className="space-y-2 text-grey-400 text-sm">
                 <li>
                   <a href="mailto:admin@deltadigital.vn" className="hover:text-brand-blue-1 transition">

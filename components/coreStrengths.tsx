@@ -29,7 +29,7 @@ export default function CoreStrengths() {
   
   return (
     <section id="core-strengths"
-             className="relative w-full bg-cover bg-center py-20 flex flex-col items-center bg-core">
+             className="py-5 lg:py-20 relative w-full bg-cover bg-center flex flex-col items-center bg-core">
       <div className="absolute inset-0 bg-white/20 backdrop-blur-[1px]"/>
       
       <div className="relative z-10 w-full max-w-6xl px-6">
@@ -37,7 +37,7 @@ export default function CoreStrengths() {
           {t('title')}
         </h2>
         
-        <div className="flex h-[340px] w-full overflow-hidden rounded-[32px] shadow-2xl">
+        <div className="flex flex-col md:flex-row min-h-[340px] w-full overflow-hidden rounded-xl shadow-2xl">
           {items.map((item) => {
             const isActive = active === item.id;
             return (
@@ -45,7 +45,7 @@ export default function CoreStrengths() {
                 key={item.id}
                 layout
                 transition={{duration: 0.6, ease: [0.4, 0, 0.2, 1]}}
-                className={`relative flex flex-col cursor-pointer overflow-hidden ${
+                className={`relative flex flex-col cursor-pointer min-h-[60px] ${
                   isActive ? 'text-white' : 'text-white/70'
                 }`}
                 style={{
