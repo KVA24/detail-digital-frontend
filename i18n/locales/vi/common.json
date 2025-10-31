@@ -58,11 +58,14 @@
     }
   },
   "footer": {
+    "info": "Thông tin",
     "company": "Công ty",
     "about": "Về chúng tôi",
-    "services": "Dịch vụ",
+    "services": "Dịch vụ quảng cáo",
+    "game": "Sản xuất game",
+    "digital": "Nội dung số",
     "contact": "Liên hệ",
     "email": "admin@deltadigital.vn",
-    "copyright": "© Delta Digital 2025"
+    "copyright": "© Delta Digital 2020"
   }
 }

@@ -303,6 +303,17 @@
   /* Neutral Colors */
   --color-black: #000000;
   --color-white: #ffffff;
+  
+  /* Brand Colors */
+  --color-brand-green: #A5CA49;
+  --color-brand-blue-1: #0061A5;
+  --color-brand-blue-2: #158BC8;
+  --color-brand-blue-3: #004875;
+  --color-secondary-1: #00A1FF;
+  --color-secondary-2: #00A1FF;
+  --color-secondary-3: #00C8FF;
+  --color-secondary-4: #7FE3FF;
+  --color-secondary-5: #E8F1FF;
 }
 
 @layer base {

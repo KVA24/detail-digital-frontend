@@ -54,11 +54,14 @@
     }
   },
   "footer": {
+    "info": "Info",
     "company": "Company",
     "about": "About",
-    "services": "Services",
+    "services": "Ad Service",
+    "game": "Game",
+    "digital": "Digital Content",
     "contact": "Contact",
     "email": "admin@deltadigital.vn",
-    "copyright": "© Delta Digital 2025"
+    "copyright": "© Delta Digital 2020"
   }
 }

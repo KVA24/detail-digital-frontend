@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://infigate.vn'),
   title: "Delta Digital",
   description: "",
-  keywords: "digital transformation, web development, game production, advertising",
+  keywords: "digital transformation, web development, game production, advertising, digital content",
   icons: {
     icon: [
       {url: "/ico_logo.png", sizes: "16x16", type: "image/png"},
